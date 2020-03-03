@@ -1,11 +1,10 @@
 html, body {
   margin: 0;
   font-family: 'Roboto';
+  background: black;
 }
 
 .o-div-header {
-  position: fixed;
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,66 +14,140 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   height: 3.5rem;
-  padding: 0.2rem 0;
-  background: white;
-  -webkit-box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.25);
+  padding: 0.2rem 1rem;
 }
 
-.o-div-header .o-h1-app-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5rem;
-  padding: 0 0 0 2rem;
-  width: 80%;
-}
-
-.o-div-header .o-h1-app-name .o-img-back {
-  max-width: 3rem;
-}
-
-.o-div-header .o-img-qr {
-  max-width: 3rem;
-  padding: 0 1rem 0 0;
+.o-div-header .o-img-back {
+  height: 1.5rem;
+  -webkit-filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(0%) hue-rotate(23deg) brightness(102%) contrast(101%);
+          filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(0%) hue-rotate(23deg) brightness(102%) contrast(101%);
 }
 
 .o-div-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 5rem 1rem 1rem 1rem;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .o-div-content .o-div-card {
-  position: relative;
-  width: 100%;
-  height: 10rem;
-  margin: 0 0 0.3rem 0;
-  overflow: hidden;
+  background: white;
   border-radius: 5px;
-}
-
-.o-div-content .o-div-card .o-card-title {
-  position: absolute;
-  color: white;
-  z-index: 1;
-  padding: 0 0 0 1rem;
-}
-
-.o-div-content .o-div-card .o-img-card-image {
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding: 1rem 1rem;
   width: 100%;
-  height: 100%;
-  -webkit-filter: brightness(75%);
-          filter: brightness(75%);
+}
+
+.o-div-content .o-restaurant-name {
+  font-size: 1.5rem;
+  margin: 0 0 0.2rem 0;
+}
+
+.o-div-content .o-table {
+  font-size: 1rem;
+  margin: 0;
+  color: #ADB0B6;
+}
+
+.o-div-content .o-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 0 0 0;
+}
+
+.o-div-content .o-label {
+  white-space: nowrap;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.o-div-content .o-div-available-seats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.o-div-content .o-input-available-seats {
+  max-width: 4rem;
+  font-size: 1.5rem;
+  text-align: right;
+  border: none;
+  border-bottom: 1px solid #AE002D;
+}
+
+.o-div-content .o-input-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.o-div-content .o-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.o-div-content .o-time {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.o-div-content .o-time-unit {
+  font-size: 0.9rem;
+}
+
+.o-div-content .o-chevron {
+  width: 1.5rem;
+  padding: 0.8rem;
+  -webkit-filter: brightness(0) saturate(100%) invert(11%) sepia(77%) saturate(5452%) hue-rotate(336deg) brightness(86%) contrast(107%);
+          filter: brightness(0) saturate(100%) invert(11%) sepia(77%) saturate(5452%) hue-rotate(336deg) brightness(86%) contrast(107%);
+}
+
+.o-div-content .o-down-chevron {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.o-div-content .o-time-division {
+  font-size: 1.5rem;
+  -webkit-transform: translate(0, -0.7rem);
+          transform: translate(0, -0.7rem);
+  margin: 0 1rem;
+}
+
+.o-div-content .o-button-accept {
+  font-size: 1.5rem;
+  color: #F70025;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 2rem 0 0 0;
+  padding: 0.2rem 1rem;
 }
 /*# sourceMappingURL=style2.css.map */
