@@ -11,49 +11,65 @@
 
 <body>
     <section class="o-section-all">
+        <!-- header start -->
         <div class="o-div-header">
             <img src="https://image.flaticon.com/icons/svg/566/566011.svg" alt="" class="o-img-back">
         </div>
+        <!-- header end -->
+        <!-- content start -->
         <div class="o-div-content">
+            <!-- card start -->
             <div class="o-div-card">
                 <div class="o-div-location">
                     <p class="o-restaurant-name">Villa Laurentino</p>
                     <p class="o-table">Mesa 10</p>
                 </div>
+                <!-- form start -->
                 <form class="o-form">
                     <div class="o-div-available-seats">
                         <p class="o-label">Puestos disponibles:</p>
                         <input type="number" id="numAvailableSeats" class="o-input-available-seats">
                     </div>
+                    <!-- time selection start -->
                     <div class="o-div-time">
                         <p class="o-label">Tiempo aproximado:</p>
                         <div class="o-input-time">
                             <div class="o-input">
+                                <!-- increaseHours call -->
                                 <img onclick="increaseHours()" class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
                                 <p id="hours" class="o-time">00</p>
+                                <!-- decreaseHours call -->
                                 <img onclick="decreaseHours()" class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
                                 <span class="o-time-unit">h</span>
                             </div>
                             <span class="o-time-division">:</span>
                             <div class="o-input">
+                                <!-- increaseMinutes call -->
                                 <img onclick="increaseMinutes()" class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
                                 <p id="minutes" class="o-time">00</p>
+                                <!-- decreaseMinutes call -->
                                 <img onclick="decreaseMinutes()" class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
                                 <span class="o-time-unit">min</span>
                             </div>
                             <span class="o-time-division">:</span>
                             <div class="o-input">
+                                <!-- increaseSeconds call -->
                                 <img onclick="increaseSeconds()" class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
                                 <p id="seconds" class="o-time">00</p>
+                                <!-- decreaseSeconds call -->
                                 <img onclick="decreaseSeconds()" class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
                                 <span class="o-time-unit">s</span>
                             </div>
                         </div>
                     </div>
+                    <!-- time selection end -->
                     <div class="o-button-accept">ACEPTAR</div>
                 </form>
+                <!-- form end -->
             </div>
+            <!-- card end -->
         </div>
+        <!-- content end -->
     </section>
     <script src="script2.js"></script>
 </body>

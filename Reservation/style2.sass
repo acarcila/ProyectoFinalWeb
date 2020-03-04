@@ -9,6 +9,7 @@ html, body
 
 .o-section-all
 
+// header start
 .o-div-header
     display: flex
     justify-content: space-between
@@ -20,8 +21,9 @@ html, body
         height: 1.5rem
         filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(0%) hue-rotate(23deg) brightness(102%) contrast(101%)
         cursor: pointer
+// header end
 
-
+// content start
 .o-div-content
     display: flex
     height: 100%
@@ -29,6 +31,7 @@ html, body
     justify-content: center
     padding: 1rem 1rem 1rem 1rem
 
+    // card start
     .o-div-card
         background: white
         border-radius: 5px
@@ -43,7 +46,9 @@ html, body
         font-size: 1rem
         margin: 0
         color: $greyColor
+    // card end
 
+    // form start
     .o-form
         display: flex
         flex-direction: column
@@ -67,6 +72,7 @@ html, body
         border: none
         border-bottom: 1px solid $darkRedColor
 
+    // time selection start
     .o-input-time
         display: flex
         justify-content: center
@@ -99,6 +105,7 @@ html, body
         font-size: 1.5rem
         transform: translate(0, -0.7rem)
         margin: 0 1rem
+    // time selection end
 
     .o-button-accept
         font-size: 1.5rem
@@ -107,6 +114,8 @@ html, body
         margin: 2rem 0 0 0
         padding: 0.2rem 1rem
         cursor: pointer
+    // form end
+// content end
 
 @media only screen and (min-width: 600px)
     .o-div-content

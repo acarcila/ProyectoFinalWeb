@@ -1,7 +1,11 @@
+// global variable for de number of hours
 var numHours = 0;
+// global variable for de number of hours
 var numMinutes = 0;
+// global variable for de number of hours
 var numSeconds = 0;
 
+//function that increase the element hours
 function increaseHours() {
     const elementHours = document.getElementById("hours");
 
@@ -14,6 +18,7 @@ function increaseHours() {
     elementHours.innerHTML = numHours.toString().padStart(2, "0");
 }
 
+//function that decrease the element hours
 function decreaseHours() {
     const elementHours = document.getElementById("hours");
 
@@ -26,6 +31,7 @@ function decreaseHours() {
     elementHours.innerHTML = numHours.toString().padStart(2, "0");
 }
 
+//function that increase the element minutes
 function increaseMinutes() {
     const elementMinutes = document.getElementById("minutes");
 
@@ -38,6 +44,7 @@ function increaseMinutes() {
     elementMinutes.innerHTML = numMinutes.toString().padStart(2, "0");
 }
 
+//function that decrease the element minutes
 function decreaseMinutes() {
     const elementMinutes = document.getElementById("minutes");
 
@@ -50,6 +57,7 @@ function decreaseMinutes() {
     elementMinutes.innerHTML = numMinutes.toString().padStart(2, "0");
 }
 
+//function that increase the element seconds
 function increaseSeconds() {
     const elementSeconds = document.getElementById("seconds");
 
@@ -62,6 +70,7 @@ function increaseSeconds() {
     elementSeconds.innerHTML = numSeconds.toString().padStart(2, "0");
 }
 
+//function that decrease the element seconds
 function decreaseSeconds() {
     const elementSeconds = document.getElementById("seconds");
 

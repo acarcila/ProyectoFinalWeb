@@ -1,3 +1,4 @@
+//color variables
 $greyColor: #ADB0B6
 $darkRedColor: #AE002D
 $lightRedColor: #F70025
@@ -8,6 +9,7 @@ html, body
 
 .o-section-all
 
+//header start
 .o-div-header
     position: fixed
     z-index: 2
@@ -32,12 +34,15 @@ html, body
         max-height: 2.2rem
         padding: 1rem
         cursor: pointer
+//header end
 
+// content start    
 .o-div-content
     display: flex
     flex-wrap: wrap
     padding: 5rem 1rem 1rem 1rem
 
+    // card start
     .o-div-card
         position: relative
         max-width: 100%
@@ -58,11 +63,18 @@ html, body
             object-fit: cover
             width: 100%
             height: 100%
-            filter: brightness(75%)       
+            filter: brightness(75%) 
+    // card end   
+// content end   
 
+//media query
 @media only screen and (min-width: 600px)
+    // content start
     .o-div-content
 
+        // card start
         .o-div-card
             width: 21rem
             margin: 0 1rem 0.5rem 0
+        // card end   
+    // content end  
