@@ -29,23 +29,23 @@
                         <p class="o-label">Tiempo aproximado:</p>
                         <div class="o-input-time">
                             <div class="o-input">
-                                <img class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
-                                <p class="o-time">00</p>
-                                <img class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
+                                <img onclick="increaseHours()" class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
+                                <p id="hours" class="o-time">00</p>
+                                <img onclick="decreaseHours()" class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
                                 <span class="o-time-unit">h</span>
                             </div>
                             <span class="o-time-division">:</span>
                             <div class="o-input">
-                                <img class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
-                                <p class="o-time">00</p>
-                                <img class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
+                                <img onclick="increaseMinutes()" class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
+                                <p id="minutes" class="o-time">00</p>
+                                <img onclick="decreaseMinutes()" class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
                                 <span class="o-time-unit">min</span>
                             </div>
                             <span class="o-time-division">:</span>
                             <div class="o-input">
-                                <img class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
-                                <p class="o-time">00</p>
-                                <img class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
+                                <img onclick="increaseSeconds()" class="o-chevron o-up-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="up chevron">
+                                <p id="seconds" class="o-time">00</p>
+                                <img onclick="decreaseSeconds()" class="o-chevron o-down-chevron" src="https://image.flaticon.com/icons/svg/2089/2089643.svg" alt="down chevron">
                                 <span class="o-time-unit">s</span>
                             </div>
                         </div>
@@ -55,6 +55,7 @@
             </div>
         </div>
     </section>
+    <script src="script2.js"></script>
 </body>
 
 </html>
